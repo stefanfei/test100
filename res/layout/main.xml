@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp" >
+
+    <TextView
+                android:id="@+id/frage"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/frage"
+                android:textStyle="bold" />
+    
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/antwort1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/antwort2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/antwort3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/antwort4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+        </TableRow>
+    </TableLayout>
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+           
+         <ProgressBar
+			android:id="@+id/progressBar1"
+	        style="?android:attr/progressBarStyleHorizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="60dp"
+	        android:max="8"
+	        android:progress="0" />
+        
+         <TextView 
+            android:id="@+id/progressbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Erreichter Spielstand"
+            android:layout_gravity="center"
+            android:textColor="#00ff00"
+            android:textStyle="bold" /> 
+    </FrameLayout>
+    
+</LinearLayout>
